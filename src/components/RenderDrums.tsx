@@ -33,7 +33,7 @@ const RenderDrums = ({ arr, onEdit }: DrumPadGridProps) => {
           <span
             className={css`
               font-size: 2rem;
-              color: gray;
+              color: white;
             `}
           >
             {audio.key}
@@ -53,15 +53,22 @@ const RenderDrums = ({ arr, onEdit }: DrumPadGridProps) => {
                 }}
                 className={css`
                   color: white;
-                  top: 0.2rem;
-                  left: 87%;
+                  top: -1.2rem;
+                  left: 83.5%;
                   position: absolute;
                   background: none;
                   border: none;
                   cursor: pointer;
                 `}
               >
-                <Image src="/+Icon.svg" width={30} height={30} alt="Add icon" />
+                <span
+                  className={css`
+                    color: gray;
+                    font-size: 4rem;
+                  `}
+                >
+                  +
+                </span>
               </div>
             )}
             <div
